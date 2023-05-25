@@ -1,0 +1,91 @@
+LandisData  "Dynamic Input Data"	<<these parameters govern the SOIL effect in the experiment
+>>     Year    Ecoregion 	Species        ProbEst	MaxANPP	MaxB	<<Pest from Sturtevant, MaxANPP from Scheller; MaxB = MaxANPP*30
+>>    -----  -------------      ---------      -------  ------- -------
+	0	FR1		abiebal		0.12	794	23820	<<FR1=xeric; ecoregion #5 of Scheller (2005) Gl Chng Biol
+	0 	FR2		abiebal      	0.18	786	23580	<<FR2=semi-xeric; ecoregion #9 of Scheller
+	0	FR3		abiebal		0.32	809	24270	<<FR3=semi-mesic; ecoregion #8 of Scheller
+	0 	FR4		abiebal      	0.38	844	25320	<<FR4=mesic; ecoregion #10 of Scheller
+	0 	FR1		acerrub       	0.74  	651	19530	
+	0 	FR2  		acerrub       	0.68	651	19530 
+	0 	FR3		acerrub       	0.90 	746	22380	
+	0 	FR4  		acerrub       	0.90	791	23730 
+	0 	FR1  		acersac       	0.06 	649	19470	<<exp opin; Linkages=0.32
+	0 	FR2  		acersac       	0.12	649	19470 	<<exp opin; Linkages=0.24
+	0 	FR3  		acersac       	0.31 	745	22350	<<exp opin; Linkages=0.32
+	0 	FR4  		acersac       	0.52	795	23850
+	0 	FR1  		betuall       	0.03 	672	20160 	<<exp opin; Linkages=0.20
+	0 	FR2  		betuall       	0.07 	671	20130	<<exp opin; Linkages=0.14
+	0 	FR3  		betuall       	0.16 	764	22920 	<<exp opin; Linkages=0.20	
+	0 	FR4  		betuall       	0.28 	811	24330 
+	0 	FR1  		betupap       	0.58  	586	17580	
+	0 	FR2  		betupap       	0.72 	587	17610 
+	0 	FR3  		betupap       	0.80 	672	20160	
+	0 	FR4  		betupap       	0.88 	716	21480 
+	0 	FR1  		fraxame       	0.07 	620	18600 	<<exp opin; Linkages=0.32	
+	0 	FR2  		fraxame       	0.14	619	18570  	<<exp opin; Linkages=0.32
+	0 	FR3  		fraxame       	0.35 	700	21000	<<exp opin; Linkages=0.54
+	0 	FR4  		fraxame       	0.60	741	22230 
+	0 	FR1  		fraxnig       	0.04	486	26000   <<used cedar values
+	0 	FR2  		fraxnig       	0.20	477	26000 
+	0 	FR3  		fraxnig       	0.18	493	26000 	
+	0 	FR4  		fraxnig       	0.40	515	26000 
+	0 	FR1  		larilar       	0.06	649	26000   <<used sugar maple values 
+	0 	FR2  		larilar       	0.12	649	26000 
+	0 	FR3  		larilar       	0.31	745	26000 
+	0 	FR4  		larilar       	0.52	795	26000 
+	0 	FR1  		picegla       	0.12 	644	19320	
+	0 	FR2  		picegla       	0.24	629	18870
+	0 	FR3  		picegla       	0.32 	650	19500	
+	0 	FR4  		picegla       	0.54	679	20370
+	0 	FR1  		picemar       	0.04 	486	26000 <<used cedar values
+	0 	FR2  		picemar       	0.20 	477	26000
+	0 	FR3  		picemar       	0.18 	493	26000 <<used cedar values
+	0 	FR4  		picemar       	0.40 	515	26000
+	0 	FR1  		pinuban       	0.86  	568	17040	
+	0 	FR2  		pinuban       	0.82	574	17220
+	0 	FR3  		pinuban       	0.96 	577	17310	
+	0 	FR4  		pinuban       	0.96	614	18420
+	0 	FR1  		pinures       	0.04 	493	14790	
+	0 	FR2  		pinures       	0.10 	498	14940
+	0 	FR3  		pinures       	0.26 	501	15030	
+	0 	FR4  		pinures       	0.48 	534	16020
+	0 	FR1  		pinustr       	0.18 	861	25830	
+	0 	FR2  		pinustr       	0.30 	865	25950
+	0 	FR3  		pinustr       	0.30 	1019	30570	
+	0 	FR4  		pinustr       	0.40 	1089	32670
+	0 	FR1  		popugra       	0.94 	667	20010 	<<exp opin; Linkages=0.94 
+	0 	FR2  		popugra       	0.90	666	19980  	<<exp opin; Linkages=0.90
+	0 	FR3  		popugra       	1.00	758	22740  	<<exp opin; Linkages=1.00
+	0 	FR4  		popugra       	0.96	805	24150  	<<exp opin; Linkages=0.96
+	0 	FR1  		poputre       	0.88  	650	19500	<<exp opin; Linkages=0.88 
+	0 	FR2  		poputre       	0.88	650	19500	<<exp opin; Linkages=0.88
+	0 	FR3  		poputre       	0.98 	746	22380	<<exp opin; Linkages=0.98
+	0 	FR4  		poputre       	1.00	796	23880	<<exp opin; Linkages=1.00
+	0 	FR1  		prunser	      	0.22  	639	19170	
+	0 	FR2  		prunser	      	0.38	641	19230
+	0 	FR3  		prunser	      	0.36 	740	22200	
+	0 	FR4  		prunser	      	0.60	794	23820
+	0 	FR1  		queralb       	0.00 	685	20550 <<should not exist on study area
+	0 	FR2  		queralb       	0.00 	687	20610
+	0 	FR3  		queralb       	0.00 	784	23520 
+	0 	FR4  		queralb       	0.00 	842	25260
+	0 	FR1  		querell       	0.46 	685	20550	
+	0 	FR2  		querell       	0.48 	684	20520
+	0 	FR3  		querell       	0.56 	773	23190	
+	0 	FR4  		querell       	0.64 	818	24540
+	0 	FR1  		querrub       	0.10 	661	19830	
+	0 	FR2  		querrub       	0.14 	661	19830
+	0 	FR3  		querrub       	0.18 	758	22740	
+	0 	FR4  		querrub       	0.40 	809	24270
+	0 	FR1  		thujocc       	0.04 	486	14580	
+	0 	FR2  		thujocc       	0.20 	477	14310
+	0 	FR3  		thujocc       	0.18 	493	14790	
+	0 	FR4  		thujocc       	0.40 	515	15450
+	0 	FR1  		tiliame       	0.04 	741	22230	
+	0 	FR2  		tiliame       	0.08 	740	22200
+	0 	FR3  		tiliame       	0.20 	848	25440	
+	0 	FR4  		tiliame       	0.34 	901	27030
+	0 	FR1  		tsugcan       	0.00 	616	18480	
+	0 	FR2  		tsugcan       	0.02 	609	18270
+	0 	FR3  		tsugcan       	0.06 	627	18810	
+	0 	FR4  		tsugcan       	0.10 	645	19350

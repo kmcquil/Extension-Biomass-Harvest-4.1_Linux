@@ -1,0 +1,63 @@
+LandisData  "Biomass Harvest"
+
+>>-------------------------------------------------------------------------------------------------
+>>  TIMESTEP
+
+Timestep    10
+
+>>-------------------------------------------------------------------------------------------------
+>>  MANAGEMENT AREAS: the .gis file which defines the management areas.
+
+ManagementAreas FACE_mngt.gis
+
+>>-------------------------------------------------------------------------------------------------
+>>  STANDS: the .gis file which defines the stands.  A stand can belong to one and
+>>  only one management area.
+
+Stands      FACE_Stand.gis
+
+>>======================    START PRESCRIPTIONS   =================================================
+
+    Prescription    StandReplacing
+
+>>  STAND RANKING METHOD:
+
+	StandRanking    Random
+
+>>  AGE REQUIREMENTS:
+
+    MinimumAge  21
+
+>>  Forest Type qualifiers
+>>	None
+
+    SiteSelection   Complete
+
+    CohortsRemoved  ClearCut
+
+>>End prescriptions ************************************************************************
+
+>>------------------------------------------------------------------------------------------------
+>>  HARVEST IMPLEMENTATION TABLE
+>>  The following table defines which management area (defined in the ManagementArea file) is
+>>  treated by which prescription(s).  
+
+    HarvestImplementations
+
+>>  Mgmt Area   Prescription    Harvest Area    Begin Time  End Time	
+>>				(per timestep)
+>>  ---------   ------------    ------------    ----------  --------
+    1		StandReplacing	12.5%		<<60 yr rotation (1/6 of 3/4 of landscape)
+
+>>-------------------------------------------------------------------------------------------------
+>> OUTPUT FILES
+
+PrescriptionMaps    harvest/prescripts-{timestep}.gis
+>>BiomassMaps         harvest/biomass-removed-{timestep}.gis
+EventLog            harvest/log.csv
+SummaryLog	    harvest/SummaryLog.csv
+>>-------------------------------------------------------------------------------------------------
+
+
+
+

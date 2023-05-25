@@ -1,0 +1,11 @@
+  Class Class Name         Cover Type                           
+  ----- -------------------------------------- 
+      0 Out                                     
+      1 M	 		Marsh/grassy wetland
+      2 FR1                     Fire regime 1
+      3 FR2			Fire regime 2
+      4 FR3                     Fire regime 3
+      5 FR4			Fire regime 4
+      6 W                       Open water                 
+      7 SH                      Swamp hardwoods
+      8 PRV 			Open grass/pasture                                      

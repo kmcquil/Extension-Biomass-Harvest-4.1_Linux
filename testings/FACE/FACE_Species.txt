@@ -1,0 +1,11 @@
+LandisData  Species
+
+>>                      Sex   Shade   Fire   Seed Displ Dist   Vegetative   Sprout Age  Post-Fire
+>> Name      Longevity  Mat    Tol.    Tol.  Effective  Max.   Reprod Prob   Min   Max   Regen
+>> ----      ---------  ----- -----   ----  ---------  ----   -----------   ----------  --------
+acersacc        250     40      5       1       100     200     0.5            0    90     none << silvics man.= sprouting drops with age.  30 in trees=6% sprout
+betupapy        120     20      2       2       200     5000    0.8            0   100     none <<Ravenscroft long=100
+clone8          100     15      1       2       500     5000    0.9            0    90     none <<Ravenscroft long=90, max dispersal=1000m
+clone42         100     15      1       2       500     5000    0.9            0    90     none
+clone216        100     15      1       2       500     5000    0.9            0    90     none
+clone271        100     15      1       2       500     5000    0.9            0    90     none

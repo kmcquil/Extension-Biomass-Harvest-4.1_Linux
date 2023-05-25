@@ -1,0 +1,14 @@
+LandisData  "Output Biomass-by-Age"
+
+Timestep   10
+
+MapNames   output/max-spp-age/{species}-{ageclass}-{timestep}.gis
+
+>>			(% of longevity) Regen (10%) Young (25%) Midseral (50%) Mature (75%) Old (>75%)
+Species betupapy Regen(<12) Young(13-30) Midseral(36-60) Mature(61-90) Old(>91) <<Long <=120
+	acersacc Regen(<25) Young(26-62) Midseral(63-125) Mature(126-188) Old(>188) <<Long 250
+	clone8	Regen(<10) Young(11-25) Midseral(26-50) Mature(51-75) Old(>75) <<Long <=100
+	clone42	Regen(<10) Young(11-25) Midseral(26-50) Mature(51-75) Old(>75) <<Long <=100
+	clone216	Regen(<10) Young(11-25) Midseral(26-50) Mature(51-75) Old(>75) <<Long <=100
+	clone271	Regen(<10) Young(11-25) Midseral(26-50) Mature(51-75) Old(>75) <<Long <=100
+

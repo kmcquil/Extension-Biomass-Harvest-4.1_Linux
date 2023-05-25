@@ -1,0 +1,8 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData  "Biomass Harvest"
+
+Timestep    10
+
+ManagementAreas  path/to/map/of/management-areas.gis
+  << ERROR EOF: Missing Stands parameter

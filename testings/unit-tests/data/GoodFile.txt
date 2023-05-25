@@ -1,0 +1,88 @@
+>> Example of a good input file for Biomass Harvest
+
+LandisData       "Biomass Harvest"
+
+Timestep         10
+
+ManagementAreas  path/to/map/of/management-areas.gis
+Stands		 path/to/map/of/stands.gis
+
+>>-------------------------------------------------------------------
+>> Prescriptions
+
+>>..................========
+   Prescription	    ClearCut
+>>..................========
+
+   StandRanking     Economic
+      >> Species    Rank      Min Age
+      >> -------    ----      -------
+         abiebals      1          20
+         betupapy      5          20
+         poputrem     10         100
+         querrubr    100         200
+         tiliamer      0          55
+         tsugcana      5       1,000    
+   SiteSelection    Complete
+   CohortsRemoved   ClearCut
+
+
+>>..................=========================
+   Prescription	    "ClearCut - SingleRepeat"
+>>..................=========================
+
+   StandRanking     MaxCohortAge
+   SiteSelection    Complete
+   CohortsRemoved   ClearCut
+   SingleRepeat     15 << years  << NOTE: not multiple of timestep
+   CohortsRemoved   SpeciesList
+         abiebals   Oldest
+         betupapy   Oldest
+         pinubank   1/6
+   Plant            querrubr tsugcana
+
+
+>>..................============
+   Prescription	    SelectiveCut
+>>..................============
+
+   StandRanking     MaxCohortAge
+   MinimumAge        50
+   MaximumAge       300
+   SiteSelection    CompleteStandSpread  25.5 << ha
+   CohortsRemoved   SpeciesList
+         abiebals   All
+         acerrubr   AllExceptYoungest
+         acersacc   AllExceptOldest
+         betualle   Oldest
+         betupapy   Youngest
+         piceglau   1/3
+         pinubank   50
+         pinuresi   50  74
+         pinustro   50  100-150
+         poputrem   10-10
+         querelli   100-150  151-200  300-1,000
+         quermacr   1,234
+         querrubr   12,345-16,000
+         tiliamer   10  50-100  150-300  320  444
+         tsugcana   1/9
+   Plant            betualle  tiliamer  pinustro  abiebals
+
+
+>>-------------------------------------------------------------------
+   HarvestImplementations
+
+>> Mgmt                   Area To  Begin  End
+>> Area    Prescription   Harvest  Time   Time
+>> ------  -------------  -------  -----  ----
+     16    ClearCut         25%
+
+    200    SelectiveCut     50%
+    200    ClearCut          5.5%
+
+
+>>-------------------------------------------------------------------
+>> Output Files
+
+PrescriptionMaps   harvest/prescriptions-{timestep}.gis
+EventLog           harvest/log.csv

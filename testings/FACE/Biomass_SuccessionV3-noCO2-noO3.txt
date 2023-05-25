@@ -1,0 +1,54 @@
+LandisData  "Biomass Succession"  <<v. 3.1
+
+Timestep	10
+
+SeedingAlgorithm  WardSeedDispersal
+
+InitialCommunities      FACE_init-communities_Every-spp.txt
+InitialCommunitiesMap   REP1_3class.gis
+
+
+>> **********************
+MinRelativeBiomass
+>> 	Shade
+>> 	Class Ecoregions
+>> 	----- ------------
+		FR3
+
+	1	4%	<<shade tol 1 spp = clone 8, 42, 216, 271
+	2	5%	<<shade tol 2 spp = betupapy 
+	3	7%	<<shade tol 3 spp = none
+	4	9%	<<shade tol 4 spp = 
+	5	14%	<<shade tol 5 spp = acersacc 
+>> **************************************************
+SufficientLight
+>> Spp Shade	Probability
+>> Class	by Actual Shade
+>> ----------	--------------------	
+>>		0	1	2	3	4	5
+	1	1.0	0.0	0.0	0.0	0.0	0.0
+	2	1.0	1.0	0.0	0.0	0.0	0.0
+	3	1.0	1.0	1.0	0.0	0.0	0.0
+	4	1.0	1.0	1.0	1.0	0.0	0.0
+	5	0.0	0.0	1.0	1.0	1.0	1.0
+
+SpeciesParameters
+>> Species   Leaf	WoodyBiomass	Mortality	Growth	Leaf	
+>>	     Longevity	DecayRate	ShapeParam	Shape	Lignin%	
+>> --------  ---------	---------	----------	------	----    
+   acersacc  1.0	0.096		10		0.25	0.096 <<Decay rates=Scheller eco5
+   betupapy  1.0	0.102		10		0.25	0.096	
+   clone8    1.0	0.102		10		0.25	0.08	
+   clone42   1.0	0.102		10		0.25	0.08	
+   clone216  1.0	0.102		10		0.25	0.08	
+   clone271  1.0	0.102		10		0.25	0.08	
+
+EcoregionParameters
+>> 	AET
+>> 	mm	<<AET from users guide 4/26/2011 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+FR3	600
+
+DynamicInputFile	noCO2-noO3-dynamic-inputs.txt
+
+AgeOnlyDisturbances:BiomassParameters biomass_age-disturbances.txt
+

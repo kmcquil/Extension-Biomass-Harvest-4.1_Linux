@@ -1,0 +1,24 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData       "Biomass Harvest"
+
+Timestep         10
+
+ManagementAreas  path/to/map/of/management-areas.gis
+Stands		 path/to/map/of/stands.gis
+
+>>-------------------------------------------------------------------
+>> Prescriptions
+
+>>..................=============
+   Prescription	    AspenClearCut
+>>..................=============
+
+   StandRanking     MaxCohortAge
+   SiteSelection    Complete
+   CohortsRemoved   SpeciesList
+          tsugcana  Oldest
+          betualle  AllExceptYoungest
+          acersacc  All
+          poputrem  1,234-6,789
+          quermacr  45  7ab-90  << ERROR HERE: Bad start age

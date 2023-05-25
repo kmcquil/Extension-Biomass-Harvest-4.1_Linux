@@ -1,0 +1,7 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData       "Biomass Harvest"
+
+Timestep         10
+
+ManagementAreas  " 	"  << ERROR HERE: Whitespace is not valid path

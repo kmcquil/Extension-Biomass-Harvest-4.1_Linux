@@ -1,0 +1,22 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData       "Biomass Harvest"
+
+Timestep         10
+
+ManagementAreas  path/to/map/of/management-areas.gis
+Stands		 path/to/map/of/stands.gis
+
+>>-------------------------------------------------------------------
+>> Prescriptions
+
+>>..................=============
+   Prescription	    AspenClearCut
+>>..................=============
+
+   StandRanking     Economic
+      >> Species    Rank      Min Age
+      >> -------    ----      -------
+         abiebals      1          20
+         betupapy      5          20
+         FooBar       10         100  << ERROR HERE: Unknown species

@@ -1,0 +1,43 @@
+LandisData  Scenario
+
+Duration  180
+
+Species   FACE_species.txt
+
+Ecoregions      FACE_ecoregions.txt
+EcoregionsMap   FACE_ecoregions.gis
+
+CellLength  30.0 << meters, so cell area = 0.09 ha
+
+>> Succession Extension     Initialization File
+>> --------------------     -------------------
+   "Biomass Succession"     Biomass_SuccessionV3-noCO2-noO3.txt
+
+
+>> Disturbance Extensions   Initialization File
+>> ----------------------   -------------------
+   "Biomass Harvest"	    Harvest_stand-replacing_disturbance.txt
+
+
+>> Other Extensions         Initialization File
+>> ----------------         -------------------
+>>   "Output Biomass-by-Age"	..\FACE_Biomass-by-age.txt
+>>   "Output Max Species Age"	..\FACE_max-spp-age.txt
+>>   "Output Biomass Reclass"	..\FACE_biomass_reclass.txt
+>>   "Output Cohort Statistics"   ..\Output_cohort_stats.txt
+>>   "Output Biomass"	    	..\Output_biomass.txt
+
+
+RandomNumberSeed  71585 	<<Rep 1
+>>RandomNumberSeed  85030	<<Rep 2
+>>RandomNumberSeed  51132	<<Rep 3
+>>RandomNumberSeed  01915	<<Rep 4
+>>RandomNumberSeed  92747	<<Rep 5
+>>RandomNumberSeed  64951	<<Rep 6
+>>RandomNumberSeed  52162	<<Rep 7
+>>RandomNumberSeed  53916	<<Rep 8
+>>RandomNumberSeed  46369	<<Rep 9
+>>RandomNumberSeed  58586	<<Rep10
+
+
+

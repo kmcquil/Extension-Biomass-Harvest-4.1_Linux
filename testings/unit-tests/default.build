@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="Landis.Tests.BiomassHarvest">
+
+    <property name="project.type"  value="library" />
+
+    <include buildfile="../settings.build" />
+
+    <include buildfile="${environment::get-variable('FLEL_DEVKIT')}/NUnit-project.build" />
+
+</project>

@@ -1,0 +1,15 @@
+LandisData  "Age-only Disturbances - Biomass Parameters"  
+
+CohortBiomassReductions  <<Percent of live cohort biomass that is vaporized by disturbance.  Remainder goes to dead pools.
+
+>> Disturbance		Woody%	Non-woody 
+>> ----------- 		------  --------- 
+  "Biomass Harvest" 	100%	0%
+    (default)	  	85%	0%
+
+DeadBiomassReductions   <<Percent of dead pool biomass that is destroyed by disturbance.
+
+>> Disturbance   	Woody   Non-Woody
+>> -----------   	-----   ---------
+   "Biomass Harvest"	0%	0% 
+    (default)		  0%	0%

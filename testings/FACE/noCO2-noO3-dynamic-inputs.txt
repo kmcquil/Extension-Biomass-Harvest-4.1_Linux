@@ -1,0 +1,14 @@
+LandisData  "Dynamic Input Data"	<<Updated w/ 9/22 ANPP values
+>>     Year    Ecoregion 	Species        ProbEst	MaxANPP	MaxB
+>>    -----  -------------      ---------      -------  ------- -------
+	0 	FR3  		acersacc       	0.32 	745     20700  <<745 Scheller value 
+	0 	FR3  		betupapy       	0.80 	1425    15300  
+	0 	FR3 		clone8       	0.98  	575     15300  
+	0 	FR3 		clone42       	0.98  	797     15300  
+	0 	FR3 		clone216       	0.98  	1017    15300  
+	0 	FR3 		clone271       	0.98  	1520    15300  
+
+>>MaxB:
+>>acersac  207 t C/ha  from Smith et al 2006 GTR-NE-343; p.40, 99th percentile values
+>>betupap  153 aspen-birch
+>>clone8   153 aspen-birch; values used were modified by percentages for MaxANPP   

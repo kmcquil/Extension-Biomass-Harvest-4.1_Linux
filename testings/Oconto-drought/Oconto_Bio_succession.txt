@@ -1,0 +1,74 @@
+LandisData  "Biomass Succession"  <<v. 3.1
+
+Timestep	10
+
+SeedingAlgorithm  WardSeedDispersal
+
+InitialCommunities      Oconto_InitCond.txt
+InitialCommunitiesMap   Oconto_InitCond.gis
+
+
+>> **********************
+MinRelativeBiomass
+>> 	Shade
+>> 	Class Ecoregions
+>> 	----- ------------
+		FR4	FR3	FR2	FR1
+
+	1	10%	15%	15%	20%	<<shade tol 1 spp = larilari pinubank popugran poputrem queralba
+	2	20%	25%	25%	30%	<<shade tol 2 spp = betupapy fraxnigr pinuresi prunsero querelli
+	3	45%	50%	50%	55%	<<shade tol 3 spp = acerrubr piceglau picemari pinustro querrubr
+	4	75%	80%	80%	85%	<<shade tol 4 spp = abiebals betualle fraxamer thujocci tiliamer
+	5	90%	95%	95%	98%	<<shade tol 5 spp = acersacc tsugcana
+>> **************************************************
+SufficientLight
+>> Spp Shade	Probability
+>> Class	by Actual Shade
+>> ----------	--------------------	
+>>		0	1	2	3	4	5
+	1	1.0	0.0	0.0	0.0	0.0	0.0
+	2	1.0	1.0	0.0	0.0	0.0	0.0
+	3	1.0	1.0	1.0	0.0	0.0	0.0
+	4	1.0	1.0	1.0	1.0	0.0	0.0
+	5	0.0	0.0	1.0	1.0	1.0	1.0
+
+SpeciesParameters
+>> Species   Leaf	WoodyBiomass	Mortality	Growth	Leaf	
+>>	     Longevity	DecayRate	ShapeParam	Shape	Lignin%	
+>> --------  ---------	---------	----------	------	----    
+   abiebal   3.0	0.1		10		0.25	0.2	
+   acerrub   1.0	0.1		10		0.25	0.1	
+   acersac   1.0	0.1		10		0.25	0.1	
+   betuall   1.0	0.1		10		0.25	0.1	
+   betupap   1.0	0.1		10		0.25	0.1	
+>>   carycor   1.0	0.1		10		0.25	0.1
+   fraxame   1.0	0.1		10		0.25	0.1	
+   fraxnig   1.0	0.1		10		0.25	0.1
+   larilar   1.0	0.1		10		0.25	0.2	
+   picegla   3.0	0.1		10		0.25	0.2
+   picemar   3.0	0.1		10		0.25	0.2	
+   pinuban   3.0	0.1		10		0.25	0.3	
+   pinures   3.0	0.1		10		0.25	0.3	
+   pinustr   3.0	0.1		10		0.25	0.3	
+   popugra   1.0	0.1		10		0.25	0.1
+   poputre   1.0	0.1		10		0.25	0.1	
+   prunser   1.0	0.1		10		0.25	0.1
+   queralb   1.0	0.1		10		0.25	0.15 
+   querell   1.0	0.1		10		0.25	0.15	
+   querrub   1.0	0.1		10		0.25	0.15	
+   thujocc   4.0	0.1		10		0.25	0.2	
+   tiliame   1.0	0.1		10		0.25	0.1	
+   tsugcan   3.0	0.1		10		0.25	0.2	
+
+EcoregionParameters
+>> 	AET
+>> 	mm	<<AET from users guide 4/26/2011 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+FR1	600
+FR2	600	<<SHOULD THIS VARY by ecoregion?
+FR3	600
+FR4	600	
+
+DynamicInputFile	Oconto-succession-dynamic-inputs.txt
+
+AgeOnlyDisturbances:BiomassParameters biomass_age-disturbances.txt
+

@@ -1,0 +1,7 @@
+LandisData  "Output Max Species Age"
+
+Timestep   10
+
+MapNames   output/max-spp-age/{species}-{timestep}.gis
+
+Species       	all

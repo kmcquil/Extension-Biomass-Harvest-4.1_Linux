@@ -1,0 +1,3 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData  "Foo Bar"  << ERROR HERE: Should be "Biomass Harvest"

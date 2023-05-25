@@ -1,0 +1,38 @@
+>> Example of a bad input file for Biomass Harvest
+
+LandisData       "Biomass Harvest"
+
+Timestep         10
+
+ManagementAreas  path/to/map/of/management-areas.gis
+Stands		 path/to/map/of/stands.gis
+
+>>-------------------------------------------------------------------
+>> Prescriptions
+
+>>..................=============
+   Prescription	    AspenClearCut
+>>..................=============
+
+   StandRanking     MaxCohortAge
+   SiteSelection    Complete
+   CohortsRemoved   ClearCut
+
+
+>>..................===========
+   Prescription	    "Clear Cut"
+>>..................===========
+
+   StandRanking     MaxCohortAge
+   SiteSelection    CompleteStandSpread  30 << ha
+   CohortsRemoved   ClearCut
+
+
+>>-------------------------------------------------------------------
+   HarvestImplementations
+
+>> Mgmt                   Area To  Begin  End
+>> Area    Prescription   Harvest  Time   Time
+>> ------  -------------  -------  -----  ----
+       16  AspenClearCut   25%
+   12,345  "Clear Cut"      7.3%   1914 << ERROR HERE: Before scenario's start year

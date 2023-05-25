@@ -1,0 +1,44 @@
+LandisData  Scenario
+
+Duration  300
+
+Species   Oconto_species.txt
+
+Ecoregions      Oconto_ecoregions.txt
+EcoregionsMap   oconto_ecoregions.gis
+
+CellLength  30 << meters, so cell area = 0.09 ha
+
+>> Succession Extension     Initialization File
+>> --------------------     -------------------
+   "Biomass Succession"     Oconto_Bio_succession.txt
+
+
+>> Disturbance Extensions   Initialization File
+>> ----------------------   -------------------
+   "Biomass Harvest"	    Harvest_stand-replacing_disturbance.txt
+>>   "Drought Generator"	    Drought_generator.txt
+>>   "Drought Disturbance"    Oconto_Drought.txt
+
+>> Other Extensions         Initialization File
+>> ----------------         -------------------
+>>   "Output Biomass-by-Age"	..\Oconto_max-spp-age.txt
+>>   "Output Max Species Age"	Oconto_max-spp-age.txt
+>>   "Output Biomass Reclass"	Oconto_reclass.txt
+>>   "Output Cohort Stats"    
+>>   "Output Biomass"	    
+
+
+>>RandomNumberSeed  79936 <<Rep 1
+>>RandomNumberSeed  56865	<<Rep 2
+RandomNumberSeed  05859	<<Rep 3
+>>RandomNumberSeed  90106	<<Rep 4
+>>RandomNumberSeed  31595	<<Rep 5
+>>RandomNumberSeed  01547	<<Rep 6
+>>RandomNumberSeed  85590	<<Rep 7
+>>RandomNumberSeed  91610	<<Rep 8
+>>RandomNumberSeed  78188	<<Rep 9
+>>RandomNumberSeed  63553	<<Rep10
+
+
+

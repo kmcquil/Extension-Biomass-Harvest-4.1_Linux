@@ -1,0 +1,85 @@
+LandisData  "Biomass Harvest"
+
+>>-------------------------------------------------------------------------------------------------
+>>  TIMESTEP
+
+Timestep    10
+
+>>-------------------------------------------------------------------------------------------------
+>>  MANAGEMENT AREAS: the .gis file which defines the management areas.
+
+ManagementAreas Oconto_mngt.gis
+
+>>-------------------------------------------------------------------------------------------------
+>>  STANDS: the .gis file which defines the stands.  A stand can belong to one and
+>>  only one management area.
+
+Stands      Oconto_Stand.gis
+
+>>======================    START PRESCRIPTIONS   =================================================
+
+    Prescription    StandReplacing
+
+>>  STAND RANKING METHOD:
+
+	StandRanking    Random
+
+>>  AGE REQUIREMENTS:
+
+    MinimumAge  11
+
+>>  Forest Type qualifiers
+>>	None
+
+    SiteSelection   Complete
+
+    CohortsRemoved  ClearCut
+
+>>==================================================================================
+
+Prescription    AspenBirchClearcut
+
+    StandRanking    MaxCohortAge
+
+    MinimumAge  50
+
+>>  Forest Type qualifiers
+    ForestTypeTable  <<deciduous
+>>  InclusionRule	ageRange	percentOfCells	 	species
+>>----------------------------------------------------------------------
+    Required		50-120		50			betupap popugra poputre
+
+    SiteSelection     Complete 
+
+    CohortsRemoved  ClearCut
+
+    Plant betupap poputre
+
+
+>>End prescriptions ************************************************************************
+
+>>------------------------------------------------------------------------------------------------
+>>  HARVEST IMPLEMENTATION TABLE
+>>  The following table defines which management area (defined in the ManagementArea file) is
+>>  treated by which prescription(s).  
+
+    HarvestImplementations
+
+>>  Mgmt Area   Prescription    Harvest Area    Begin Time  End Time	
+>>				(per timestep)
+>>  ---------   ------------    ------------    ----------  --------
+    1           AspenBirchClearcut  	2.5%	<<80 yr rotation
+    1		StandReplacing		2.5%	<<320 yr rotation
+
+>>-------------------------------------------------------------------------------------------------
+>> OUTPUT FILES
+
+PrescriptionMaps    harvest/prescripts-{timestep}.gis
+BiomassMaps         harvest/biomass-removed-{timestep}.img
+EventLog            harvest/log.csv
+SummaryLog	    harvest/SummaryLog.csv
+>>-------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,19 @@
+LandisData  "Output Biomass Reclass"
+
+
+Timestep   10
+
+ReclassMaps
+
+>> Map Name    Forest Type    Species
+>> --------    -------------  -------
+   Dom ->      Maple		acersacc 
+               Birch		betupapy 
+	       Clone8		clone8
+	       Clone42		clone42
+	       Clone216		clone216
+	       Clone271		clone271
+
+   
+MapFileNames   output/reclass/{reclass-map-name}-{timestep}.gis
+

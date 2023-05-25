@@ -1,0 +1,21 @@
+LandisData  "Initial Communities"
+
+>>
+MapCode 0
+
+>>
+MapCode 1	<<Aspen only
+ clone8   1
+ clone42  1
+ clone216 1
+ clone271 1
+
+>>
+MapCode 2	<<Aspen-birch
+ clone216 1
+ betupapy 1
+
+>>
+MapCode 3	<<Aspen-maple
+ clone216 1
+ acersacc 1

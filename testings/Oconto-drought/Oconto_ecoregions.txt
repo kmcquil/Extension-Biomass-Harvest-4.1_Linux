@@ -1,0 +1,10 @@
+LandisData  Ecoregions
+
+>>         Map
+>> Active  Code  Name   Description
+>> ------  ----  -----  -----------
+       no    0   empty  "Inactive"
+      yes    1   FR1	"Xeric soils"
+      yes    2   FR2	"Semi-xeric"
+      yes    3   FR3	"Semi=mesic"
+      yes    4   FR4	"Mesic soils"
