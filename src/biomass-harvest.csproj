@@ -50,8 +50,8 @@
     <Reference Include="Landis.Library.Cohorts-v2">
       <HintPath>..\..\build\extensions\Landis.Library.Cohorts-v2.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.HarvestManagement-v3">
-      <HintPath>..\..\build\extensions\Landis.Library.HarvestManagement-v3.dll</HintPath>
+    <Reference Include="Landis.Library.HarvestManagement-v4">
+      <HintPath>..\..\build\extensions\Landis.Library.HarvestManagement-v4.dll</HintPath>
     </Reference>
     <Reference Include="Landis.Library.Metadata-v2">
       <HintPath>..\..\build\extensions\Landis.Library.Metadata-v2.dll</HintPath>
@@ -59,8 +59,8 @@
     <Reference Include="Landis.Library.SiteHarvest-v2">
       <HintPath>..\..\build\extensions\Landis.Library.SiteHarvest-v2.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.Succession-v7">
-      <HintPath>..\..\build\extensions\Landis.Library.Succession-v7.dll</HintPath>
+    <Reference Include="Landis.Library.Succession-v8">
+      <HintPath>..\..\build\extensions\Landis.Library.Succession-v8.dll</HintPath>
     </Reference>
   </ItemGroup>
 
